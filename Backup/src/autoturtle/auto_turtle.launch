@@ -1,0 +1,10 @@
+<launch>
+    <!-- Tämä on kommentti rivi. Voi olla monirivinen kunhan on nuolien välissä -->
+    <node pkg="turtlesim" type="turtlesim_node" name="Autoturtle"/>
+
+    <node pkg="autoturtle" type="randomwalk_wallavoider.py" name="WallAvoider">
+    </node>
+    <!-- Huoma kaksi eri tapaa sulkea node. Jälkimmäiseen on helpompi lisätä muita
+    optioita komentoon -->
+
+</launch>

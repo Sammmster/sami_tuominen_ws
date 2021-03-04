@@ -1,0 +1,17 @@
+<launch>
+    <node pkg="turtlesim" type="turtlesim_node" name="simsim"/>
+    <node pkg="turtlesim" type="turtle_teleop_key" name="teleop" output="screen"/>
+
+    <node name="turtle1_tf2_broadcaster" pkg="tf2_harjoitus" type="turtle_tf2_broadcaster.py">
+        <param name="turtle" type="string" value="turtle1"/>
+    </node>
+
+    <node name="turtle2_tf2_broadcaster" pkg="tf2_harjoitus" type="turtle_tf2_broadcaster.py">
+        <param name="turtle" type="string" value="turtle2"/>
+    </node>
+
+    <node name="listener" pkg="tf2_harjoitus" type="turtle_tf2_listener.py" output="screen"/>
+
+
+</launch>
+
